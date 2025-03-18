@@ -1,0 +1,90 @@
+/* styles.css - Cyberpunk-Inspired Dark Mode for PyQt */
+
+/* General styles */
+QWidget {
+  font-family: "Orbitron", sans-serif;
+  font-size: 12pt;
+  color: #0ff;
+  background-color: #000;
+  /* Pure black background */
+}
+
+/* QLabel styles */
+QLabel {
+  padding: 4px 0;
+}
+
+QLabel.header {
+  color: #ff00ff;
+  font-size: 18pt;
+  font-weight: bold;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #0ff;
+  text-transform: uppercase;
+}
+
+/* QPushButton styles */
+QPushButton {
+  background-color: #111;
+  color: #0ff;
+  border: 2px solid #ff00ff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+QPushButton:hover {
+  background-color: #222;
+  border-color: #0ff;
+  text-shadow: 0px 0px 8px #0ff;
+}
+
+QPushButton:pressed {
+  background-color: #ff00ff;
+  border-color: #000;
+  color: #000;
+}
+
+/* QLineEdit styles */
+QLineEdit {
+  padding: 10px;
+  border: 2px solid #0ff;
+  border-radius: 4px;
+  background-color: #111;
+  color: #0ff;
+  outline: none;
+}
+
+QLineEdit:focus {
+  border-color: #ff00ff;
+  background-color: #222;
+  color: #ff00ff;
+}
+
+/* QTextEdit styles */
+QTextEdit {
+  padding: 10px;
+  border: 2px solid #0ff;
+  border-radius: 4px;
+  background-color: #111;
+  color: #0ff;
+  outline: none;
+}
+
+QTextEdit:focus {
+  border-color: #ff00ff;
+  background-color: #222;
+  color: #ff00ff;
+}
+
+/* QFrame styles */
+QFrame.section {
+  background-color: #111;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  border: 2px solid #0ff;
+}
