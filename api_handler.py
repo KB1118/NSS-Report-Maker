@@ -26,7 +26,7 @@ class APIHandler:
     
         try:
             if not takeaway_prompt:
-                takeaway_prompt = """Based on the event description given, identify exactly five key problem-focused takeaways related to social service and substance abuse. Keep it a line or two each. Focus on the specific difficulties, dilemmas, and impacts discussed, rather than just general event outcomes. Format each takeaway with a title and description separated by a colon, without any asterisks (use numbers). Do not include the phrase 'Key Takeaways'. Example format:
+                takeaway_prompt = """Based on the event description given, identify exactly four key takeaways related to the event. Keep it a line or two each. Focus on the specific difficulties, dilemmas, and impacts discussed, rather than just general event outcomes. Format each takeaway with a title and description separated by a colon, without any asterisks (use numbers). Do not include the phrase 'Key Takeaways'. Example format:
                 Takeaway Title: Takeaway"""
             
             prompt = takeaway_prompt + f"\nEvent Description: {text}"
